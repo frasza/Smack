@@ -10,3 +10,5 @@ import Foundation
 
 // Segues
 let GO_TO_LOGIN = "goToLogin"
+let GO_TO_CREATEACCOUNT = "goToCreateAccount"
+let UNWIND = "unwindToChannel"
