@@ -10,9 +10,39 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
 
+    //MARK: - Outlets
+    /***************************************************************/
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var userImage: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+    }
+    
+    //MARK: - Actions
+    /***************************************************************/
+    
+    @IBAction func createAccountButtonPressed(_ sender: UIButton) {
+        guard let email = emailTextField.text, emailTextField.text != "" else { return }
+        guard let pass = passwordTextField.text, passwordTextField.text != "" else { return }
+        
+        AuthService.instance.registerUser(email: email, password: pass) { (success) in
+            if success {
+                print("Registered user!")
+            }
+        }
+    }
+    
+    @IBAction func chooseAvatarButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func generateColorButtonPressed(_ sender: UIButton) {
         
     }
     
