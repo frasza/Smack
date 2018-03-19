@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ADAAB4B20601B0E000E571F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAAB4A20601B0E000E571F /* AuthService.swift */; };
 		3AEF367C205EC4DE00D54C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF367B205EC4DE00D54C64 /* AppDelegate.swift */; };
 		3AEF3681205EC4DE00D54C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF367F205EC4DE00D54C64 /* Main.storyboard */; };
 		3AEF3683205EC4DE00D54C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF3682205EC4DE00D54C64 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ADAAB4A20601B0E000E571F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3AEF3678205EC4DE00D54C64 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEF367B205EC4DE00D54C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AEF3680205EC4DE00D54C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ADAAB4920601AFC000E571F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3ADAAB4A20601B0E000E571F /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		3AEF366F205EC4DE00D54C64 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		3AEF367A205EC4DE00D54C64 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				3ADAAB4920601AFC000E571F /* Services */,
 				3AEF369B205ED3C600D54C64 /* Utilities */,
 				3AEF3694205EC86200D54C64 /* Model */,
 				3AEF3693205EC85D00D54C64 /* View */,
@@ -289,6 +300,7 @@
 				3AEF369F205ED72700D54C64 /* LoginViewController.swift in Sources */,
 				3AEF367C205EC4DE00D54C64 /* AppDelegate.swift in Sources */,
 				3AEF3696205EC88500D54C64 /* ChatViewController.swift in Sources */,
+				3ADAAB4B20601B0E000E571F /* AuthService.swift in Sources */,
 				3AEF369A205ECCA200D54C64 /* GradientView.swift in Sources */,
 				3AEF36A1205ED89300D54C64 /* CreateAccountViewController.swift in Sources */,
 				3AEF3698205EC89400D54C64 /* ChannelViewController.swift in Sources */,
