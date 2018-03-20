@@ -52,7 +52,7 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func chooseAvatarButtonPressed(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: GO_TO_AVATAR_PICKER, sender: self)
     }
     
     @IBAction func generateColorButtonPressed(_ sender: UIButton) {
