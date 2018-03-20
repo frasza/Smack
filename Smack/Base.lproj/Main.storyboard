@@ -406,7 +406,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="Cdf-Gn-ACd" id="eQv-tp-eHY"/>
                         <outlet property="passwordTextField" destination="KOl-tU-AoS" id="B1q-1x-ZfB"/>
-                        <outlet property="userImage" destination="DhC-px-tBj" id="FEE-Kx-GVE"/>
+                        <outlet property="userImage" destination="Asj-Em-AzM" id="bm4-nI-mDi"/>
                         <outlet property="usernameTextField" destination="8cP-mp-SPQ" id="65m-ey-86p"/>
                         <segue destination="qhe-MY-mrj" kind="show" identifier="goToAvatarPicker" id="kE6-dZ-5WK"/>
                     </connections>
