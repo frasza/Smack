@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A21443F2062F59100926FFF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21443E2062F59100926FFF /* CircleImage.swift */; };
 		3ABBA5BD20619B4C0085005E /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBA5BC20619B4C0085005E /* AvatarPickerViewController.swift */; };
 		3ABBA5BF20619D050085005E /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBA5BE20619D050085005E /* AvatarCell.swift */; };
 		3ADAAB4B20601B0E000E571F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAAB4A20601B0E000E571F /* AuthService.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A21443E2062F59100926FFF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		3ABBA5BC20619B4C0085005E /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		3ABBA5BE20619D050085005E /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		3ADAAB4A20601B0E000E571F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				3AEF3699205ECCA200D54C64 /* GradientView.swift */,
 				3ADAAB4C2060231D000E571F /* RoundedButton.swift */,
 				3ABBA5BE20619D050085005E /* AvatarCell.swift */,
+				3A21443E2062F59100926FFF /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				3AEF369F205ED72700D54C64 /* LoginViewController.swift in Sources */,
 				3ADAAB4D2060231D000E571F /* RoundedButton.swift in Sources */,
 				3AEF367C205EC4DE00D54C64 /* AppDelegate.swift in Sources */,
+				3A21443F2062F59100926FFF /* CircleImage.swift in Sources */,
 				3ADAAB4F20604F8D000E571F /* UserDataService.swift in Sources */,
 				3AEF3696205EC88500D54C64 /* ChatViewController.swift in Sources */,
 				3ADAAB4B20601B0E000E571F /* AuthService.swift in Sources */,
