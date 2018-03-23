@@ -180,7 +180,7 @@
                                 <rect key="frame" x="0.0" y="134.5" width="375" height="417.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="a7O-I9-jdw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="a7O-I9-jdw" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a7O-I9-jdw" id="iBw-sS-76A">
@@ -200,8 +200,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="dQq-yB-bAd" id="FKZ-gx-bAj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2G9-hX-Pkx" id="P4Y-pf-qKZ"/>
+                                    <outlet property="delegate" destination="2G9-hX-Pkx" id="cn7-BT-PCN"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -225,6 +232,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="4dz-Hj-Vvr" id="ye4-Vb-sMC"/>
+                        <outlet property="tableView" destination="NVU-3x-u7H" id="gvW-kt-zo6"/>
                         <outlet property="userImage" destination="nu7-o2-BVl" id="LKl-RF-YpD"/>
                         <segue destination="9Jg-YB-CBI" kind="show" identifier="goToLogin" id="ztB-WT-CtU"/>
                         <segue destination="2NX-xn-xOp" kind="presentation" identifier="goToProfile" modalPresentationStyle="overCurrentContext" id="YmG-bM-RYK"/>
