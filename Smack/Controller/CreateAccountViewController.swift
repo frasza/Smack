@@ -27,6 +27,8 @@ class CreateAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,7 +46,7 @@ class CreateAccountViewController: UIViewController {
     
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
         activityIndicator.isHidden = false
-        activityIndicator.stopAnimating()
+        activityIndicator.startAnimating()
         
         guard let name = usernameTextField.text, usernameTextField.text != "" else { return }
         guard let email = emailTextField.text, emailTextField.text != "" else { return }

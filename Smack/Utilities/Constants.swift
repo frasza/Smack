@@ -21,6 +21,7 @@ let GO_TO_LOGIN = "goToLogin"
 let GO_TO_CREATEACCOUNT = "goToCreateAccount"
 let UNWIND = "unwindToChannel"
 let GO_TO_AVATAR_PICKER = "goToAvatarPicker"
+let GO_TO_PROFILE = "goToProfile"
 
 // User Defaults
 let TOKEN_KEY = "token"

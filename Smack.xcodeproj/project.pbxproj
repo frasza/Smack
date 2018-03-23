@@ -13,6 +13,7 @@
 		3ADAAB4B20601B0E000E571F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAAB4A20601B0E000E571F /* AuthService.swift */; };
 		3ADAAB4D2060231D000E571F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAAB4C2060231D000E571F /* RoundedButton.swift */; };
 		3ADAAB4F20604F8D000E571F /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAAB4E20604F8D000E571F /* UserDataService.swift */; };
+		3ADD5740206513990018B5B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD573F206513990018B5B9 /* ProfileViewController.swift */; };
 		3AEF367C205EC4DE00D54C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF367B205EC4DE00D54C64 /* AppDelegate.swift */; };
 		3AEF3681205EC4DE00D54C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF367F205EC4DE00D54C64 /* Main.storyboard */; };
 		3AEF3683205EC4DE00D54C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF3682205EC4DE00D54C64 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		3ADAAB4A20601B0E000E571F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3ADAAB4C2060231D000E571F /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3ADAAB4E20604F8D000E571F /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		3ADD573F206513990018B5B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3AEF3678205EC4DE00D54C64 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEF367B205EC4DE00D54C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AEF3680205EC4DE00D54C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				3AEF369E205ED72700D54C64 /* LoginViewController.swift */,
 				3AEF36A0205ED89300D54C64 /* CreateAccountViewController.swift */,
 				3ABBA5BC20619B4C0085005E /* AvatarPickerViewController.swift */,
+				3ADD573F206513990018B5B9 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				3AEF36A1205ED89300D54C64 /* CreateAccountViewController.swift in Sources */,
 				3ABBA5BF20619D050085005E /* AvatarCell.swift in Sources */,
 				3AEF3698205EC89400D54C64 /* ChannelViewController.swift in Sources */,
+				3ADD5740206513990018B5B9 /* ProfileViewController.swift in Sources */,
 				3AEF3691205EC5EC00D54C64 /* SWRevealViewController.m in Sources */,
 				3AEF369D205ED3DB00D54C64 /* Constants.swift in Sources */,
 			);

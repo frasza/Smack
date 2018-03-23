@@ -28,7 +28,11 @@ class ChannelViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: GO_TO_LOGIN, sender: self)
+        if AuthService.instance.isLoggedIn {
+            performSegue(withIdentifier: GO_TO_PROFILE, sender: self)
+        } else {
+            performSegue(withIdentifier: GO_TO_LOGIN, sender: self)
+        }
     }
     
     @objc func userDataDidChange(_ notif: Notification) {
