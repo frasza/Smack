@@ -40,6 +40,10 @@ class ChannelViewController: UIViewController {
         }
     }
     
+    @IBAction func addChannelButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToCreateChannel", sender: self)
+    }
+    
     @objc func userDataDidChange(_ notif: Notification) {
         setupUserInfo()
     }
