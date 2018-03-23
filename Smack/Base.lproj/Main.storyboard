@@ -331,12 +331,20 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="9Jg-YB-CBI" eventType="touchUpInside" id="jsE-O3-ywX"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hSl-ct-yCV">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="J3f-u1-5U0" firstAttribute="top" secondItem="9Ya-3r-EMV" secondAttribute="top" constant="60" id="F13-e6-ri8"/>
                             <constraint firstItem="Eq6-ud-Ekc" firstAttribute="top" secondItem="J3f-u1-5U0" secondAttribute="bottom" constant="40" id="JwA-sm-KeE"/>
+                            <constraint firstItem="hSl-ct-yCV" firstAttribute="centerY" secondItem="r54-ju-KuJ" secondAttribute="centerY" constant="-100" id="UId-qI-igQ"/>
                             <constraint firstItem="J3f-u1-5U0" firstAttribute="centerX" secondItem="r54-ju-KuJ" secondAttribute="centerX" id="UIp-V3-cy9"/>
                             <constraint firstItem="2az-Ak-KZ5" firstAttribute="top" secondItem="Eq6-ud-Ekc" secondAttribute="bottom" constant="40" id="WeP-dJ-2cD"/>
                             <constraint firstItem="G79-b5-Hoa" firstAttribute="centerX" secondItem="r54-ju-KuJ" secondAttribute="centerX" id="dKD-WJ-bx4"/>
@@ -344,11 +352,15 @@
                             <constraint firstItem="G79-b5-Hoa" firstAttribute="top" secondItem="2az-Ak-KZ5" secondAttribute="bottom" id="l59-RR-faz"/>
                             <constraint firstItem="sRa-Rq-u1L" firstAttribute="top" secondItem="9Ya-3r-EMV" secondAttribute="top" constant="8" id="nJS-lA-tYM"/>
                             <constraint firstItem="2az-Ak-KZ5" firstAttribute="centerX" secondItem="r54-ju-KuJ" secondAttribute="centerX" id="ocv-F6-USS"/>
+                            <constraint firstItem="hSl-ct-yCV" firstAttribute="centerX" secondItem="r54-ju-KuJ" secondAttribute="centerX" id="yds-ig-z5n"/>
                             <constraint firstItem="sRa-Rq-u1L" firstAttribute="trailing" secondItem="r54-ju-KuJ" secondAttribute="trailingMargin" id="zxy-Od-MSf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Ya-3r-EMV"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="hSl-ct-yCV" id="Ynh-be-kKE"/>
+                        <outlet property="passwordTextField" destination="kjx-Op-0lg" id="bGU-b3-od3"/>
+                        <outlet property="usernameTextField" destination="MfW-yA-qqN" id="04v-Yq-Lou"/>
                         <segue destination="SIH-di-JZJ" kind="show" identifier="goToCreateAccount" id="pAP-Eu-Lud"/>
                     </connections>
                 </viewController>
