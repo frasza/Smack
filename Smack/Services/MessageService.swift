@@ -48,6 +48,7 @@ class MessageService {
             if response.result.error != nil {
                 debugPrint(response.result.error as Any)
                 completion(false)
+                print("Errroroororr")
             } else {
                 self.clearMessages()
                 

@@ -16,6 +16,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var selectedChannelLabel: UILabel!
     @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,9 @@ class ChatViewController: UIViewController {
         MessageService.instance.getAllChannels { (success) in
             
         }
+        
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     @objc func handleTap() {
@@ -69,7 +73,7 @@ class ChatViewController: UIViewController {
         guard let channelId = MessageService.instance.selectedChannel?.id else { return }
         MessageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
             if success {
-                
+                self.tableView.reloadData()
             }
         }
     }
@@ -81,7 +85,6 @@ class ChatViewController: UIViewController {
     func updateWithChannel() {
         let channel = MessageService.instance.selectedChannel?.channelTitle ?? "Smack"
         selectedChannelLabel.text = "#\(channel)"
-        
         getMessages()
     }
 
@@ -98,4 +101,25 @@ class ChatViewController: UIViewController {
             })
         }
     }
+}
+
+//MARK: - Table View Extension
+/***************************************************************/
+extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageService.instance.messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell {
+            let message = MessageService.instance.messages[indexPath.row]
+            cell.configureCell(message: message)
+            
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
 }
