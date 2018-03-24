@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1E20BB206668320039EDB5 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E20BA206668320039EDB5 /* SocketService.swift */; };
 		3A21443F2062F59100926FFF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21443E2062F59100926FFF /* CircleImage.swift */; };
 		3ABBA5BD20619B4C0085005E /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBA5BC20619B4C0085005E /* AvatarPickerViewController.swift */; };
 		3ABBA5BF20619D050085005E /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBA5BE20619D050085005E /* AvatarCell.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1E20BA206668320039EDB5 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		3A21443E2062F59100926FFF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		3ABBA5BC20619B4C0085005E /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		3ABBA5BE20619D050085005E /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				3ADAAB4A20601B0E000E571F /* AuthService.swift */,
 				3ADAAB4E20604F8D000E571F /* UserDataService.swift */,
 				3ADD5741206553800018B5B9 /* MessageService.swift */,
+				3A1E20BA206668320039EDB5 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1E20BB206668320039EDB5 /* SocketService.swift in Sources */,
 				3AEF369F205ED72700D54C64 /* LoginViewController.swift in Sources */,
 				3ADD5746206558870018B5B9 /* ChannelCell.swift in Sources */,
 				3ADAAB4D2060231D000E571F /* RoundedButton.swift in Sources */,
