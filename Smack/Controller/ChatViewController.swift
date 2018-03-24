@@ -17,6 +17,10 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var selectedChannelLabel: UILabel!
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sendButton: UIButton!
+    
+    // Variables
+    var isTyping = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +37,16 @@ class ChatViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(userDataDidChange), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(channelSelected), name: NOTIF_CHANNEL_SELECTED, object: nil)
         
+        SocketService.instance.getMessages { (success) in
+            if success {
+                self.tableView.reloadData()
+                if MessageService.instance.messages.count > 0 {
+                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
+                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
+                }
+            }
+        }
+        
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail(completion: { (success) in
                 if success {
@@ -47,6 +61,8 @@ class ChatViewController: UIViewController {
         
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        sendButton.isHidden = true
     }
     
     @objc func handleTap() {
@@ -66,6 +82,8 @@ class ChatViewController: UIViewController {
                     }
                 }
             })
+        } else {
+            tableView.reloadData()
         }
     }
     
@@ -87,6 +105,19 @@ class ChatViewController: UIViewController {
         selectedChannelLabel.text = "#\(channel)"
         getMessages()
     }
+    
+    @IBAction func messageTextFieldEditing(_ sender: UITextField) {
+        if messageTextField.text == "" {
+            isTyping = false
+            sendButton.isHidden = true
+        } else {
+            if isTyping == false {
+                sendButton.isHidden = false
+            }
+            isTyping = true
+        }
+    }
+    
 
     @IBAction func sendMessageButtonPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
