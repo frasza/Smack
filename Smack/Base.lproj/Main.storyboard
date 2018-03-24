@@ -810,6 +810,7 @@
                     </view>
                     <connections>
                         <outlet property="menuBtn" destination="eST-YN-Spm" id="5kW-gb-4hN"/>
+                        <outlet property="selectedChannelLabel" destination="r6T-np-OBc" id="1w9-PZ-TfP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-Wk-6vM" userLabel="First Responder" sceneMemberID="firstResponder"/>
