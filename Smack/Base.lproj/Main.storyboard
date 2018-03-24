@@ -882,6 +882,12 @@
                                     <outlet property="delegate" destination="4xe-Ne-W32" id="OrJ-At-moQ"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9W-vq-qY5">
+                                <rect key="frame" x="8" y="623" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -889,6 +895,8 @@
                             <constraint firstItem="OqA-4J-cyV" firstAttribute="top" secondItem="E1B-BJ-ogf" secondAttribute="bottom" constant="30" id="7AF-oX-Que"/>
                             <constraint firstItem="OqA-4J-cyV" firstAttribute="leading" secondItem="WjY-FL-7JQ" secondAttribute="leading" id="Cmh-tx-UeS"/>
                             <constraint firstItem="WjY-FL-7JQ" firstAttribute="trailing" secondItem="mOI-sD-8rr" secondAttribute="trailing" constant="8" id="DI2-FE-XGV"/>
+                            <constraint firstItem="OqA-4J-cyV" firstAttribute="top" secondItem="p9W-vq-qY5" secondAttribute="bottom" constant="4" id="LkG-yG-C1u"/>
+                            <constraint firstItem="p9W-vq-qY5" firstAttribute="leading" secondItem="WjY-FL-7JQ" secondAttribute="leading" constant="8" id="NaD-dv-jgm"/>
                             <constraint firstItem="E1B-BJ-ogf" firstAttribute="leading" secondItem="WjY-FL-7JQ" secondAttribute="leading" id="cyl-mE-kbP"/>
                             <constraint firstItem="OqA-4J-cyV" firstAttribute="bottom" secondItem="WjY-FL-7JQ" secondAttribute="bottom" id="fDg-19-FCr"/>
                             <constraint firstItem="E1B-BJ-ogf" firstAttribute="top" secondItem="gvW-Ti-O6I" secondAttribute="bottom" id="h1R-V5-Ns3"/>
@@ -906,6 +914,7 @@
                         <outlet property="selectedChannelLabel" destination="r6T-np-OBc" id="1w9-PZ-TfP"/>
                         <outlet property="sendButton" destination="mOI-sD-8rr" id="Pn4-CA-PsJ"/>
                         <outlet property="tableView" destination="E1B-BJ-ogf" id="uYH-ol-QRc"/>
+                        <outlet property="userTypingLabel" destination="p9W-vq-qY5" id="wJe-57-gYf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbR-Wk-6vM" userLabel="First Responder" sceneMemberID="firstResponder"/>
