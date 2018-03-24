@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A1E20BB206668320039EDB5 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E20BA206668320039EDB5 /* SocketService.swift */; };
 		3A21443F2062F59100926FFF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21443E2062F59100926FFF /* CircleImage.swift */; };
+		3A9E005220668F33003CE189 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E005120668F33003CE189 /* Message.swift */; };
 		3ABBA5BD20619B4C0085005E /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBA5BC20619B4C0085005E /* AvatarPickerViewController.swift */; };
 		3ABBA5BF20619D050085005E /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBA5BE20619D050085005E /* AvatarCell.swift */; };
 		3ADAAB4B20601B0E000E571F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAAB4A20601B0E000E571F /* AuthService.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		3A1E20BA206668320039EDB5 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		3A21443E2062F59100926FFF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		3A9E005120668F33003CE189 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3ABBA5BC20619B4C0085005E /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		3ABBA5BE20619D050085005E /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		3ADAAB4A20601B0E000E571F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				3ADD5743206553D30018B5B9 /* Channel.swift */,
+				3A9E005120668F33003CE189 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				3ADAAB4D2060231D000E571F /* RoundedButton.swift in Sources */,
 				3AEF367C205EC4DE00D54C64 /* AppDelegate.swift in Sources */,
 				3A21443F2062F59100926FFF /* CircleImage.swift in Sources */,
+				3A9E005220668F33003CE189 /* Message.swift in Sources */,
 				3ADD5744206553D30018B5B9 /* Channel.swift in Sources */,
 				3ADAAB4F20604F8D000E571F /* UserDataService.swift in Sources */,
 				3ADD5742206553800018B5B9 /* MessageService.swift in Sources */,
